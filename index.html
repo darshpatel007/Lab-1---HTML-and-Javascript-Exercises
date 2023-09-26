@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <title>Homework 1</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Darsh Patel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Home-->
+    <div
+      class="container-fluid d-flex align-items-center justify-content-center bg-dark"
+      style="height: 100vh"
+      id="home"
+    >
+      <div class="d-block">
+        <h1 style="color: white" class="text-center">Hello, Hola!, नमस्ते</h1>
+        <br />
+        <h3 style="color: gold" class="text-center">
+          I'm
+          <span style="color: #0088ff">Darsh Patel</span>
+        </h3>
+      </div>
+    </div>
+
+    <!--About-->
+    <div
+      class="container-fluid d-flex align-items-center justify-content-center"
+      style="height: 100vh; background-color: #0088ff"
+      id="about"
+    >
+      <div class="d-block">
+        <div class="container">
+          <h1 class="text-white" style="font-size: 45px"><i>About</i></h1>
+          <br /><br />
+          <div class="row justify-content-md-center">
+            <div class="col col-md-4 align-items-center justify-content-center">
+              <img
+                class="img-fluid"
+                src="./images/photo_1.jpg"
+                alt=""
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="col-md-8">
+              <br />
+              <br />
+              <p style="color: aqua; font-size: 20px">
+                Hello, My Name is Darsh Patel.
+              </p>
+              <p style="color: aqua; font-size: 20px">I'm from India.</p>
+              <p style="color: aqua; font-size: 20px">
+                I Completed my B. Tech. in Computer Engineering 2021.
+              </p>
+              <p style="color: aqua; font-size: 20px">
+                I worked in Tata Consultancy Services(TCS) for 1.5 years as a
+                Cloud Technical Consultant.
+              </p>
+              <p style="color: aqua; font-size: 20px">
+                This Fall 2023 quarter, I'm taking CSC 436: Web Applications
+                course, I'm expecting to learn more about web development with
+                MERN stack.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Gallery-->
+    <div
+      class="container-fluid d-flex align-items-center justify-content-center"
+      style="height: 100vh; background-color: burlywood"
+      id="gallery"
+    >
+      <div class="d-block">
+        <div class="album py-5">
+          <div class="container">
+            <h1 class="mb-5" style="color: aliceblue; font-size: 45px">
+              <i>Gallery</i>
+            </h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/photo_2.jpg" alt="" />
+
+                  <div class="card-body">
+                    <p class="card-text">Hello Chicago!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/photo_3.jpg" alt="" />
+
+                  <div class="card-body">
+                    <p class="card-text">Hola London House!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/photo_4.jpg" alt="" />
+
+                  <div class="card-body">
+                    <p class="card-text">नमस्ते Millenium Park!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact-->
+    <div
+      class="container-fluid d-flex align-items-center justify-content-center"
+      style="height: 100vh; background-color: #0088ff"
+      id="contact"
+    >
+      <div class="d-block">
+        <div class="container">
+          <h1 class="text-white" style="font-size: 45px"><i>Contact</i></h1>
+          <br /><br />
+          <div class="row">
+            <div class="col-lg-12 text-white">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Mobile Number</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    max="9999999999"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-warning">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid bg-dark" style="color: white !important">
+      <footer class="py-3">
+        <ul
+          class="nav justify-content-center border-bottom pb-3 mb-3 text-white"
+        >
+          <li class="nav-item">
+            <a href="#home" class="nav-link px-2">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link px-2">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link px-2">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link px-2">Contact</a>
+          </li>
+        </ul>
+        <p class="text-center">
+          &copy; 2023 Darsh Patel ! All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
